@@ -1,7 +1,7 @@
 name = input('whats your name?')
 print('Nice to meet yout,' , name)
 
-day = input('whats your birthday?')
+day = input('what day you were born?')
 month = input('whats your birthday month?')
 year = input('when you born?')
 print('You born at' , month , day , 'of' , year)
