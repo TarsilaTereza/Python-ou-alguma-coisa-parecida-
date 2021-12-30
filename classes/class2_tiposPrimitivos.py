@@ -20,3 +20,22 @@ print("the sume is ", s)
 print("the sume between {} and {} is {}".format(n1, n2, s))
 #CONSOLE
 #> the sume between 2 and 3 is 5
+
+v = bool(input('type a value: '))
+print(v)
+#CONSOLE
+#> type a value:
+#> False
+
+#> type a value: 9
+#> True
+
+a = input('type something: ')
+print(a.isnumeric()) #isalpha/#isalnum
+#CONSOLE
+#type something: hi lorena
+#False
+
+#type something: 8
+#True
+
