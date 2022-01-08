@@ -31,7 +31,7 @@ print(v)
 #> True
 
 a = input('type something: ')
-print(a.isnumeric()) #isalpha/#isalnum
+print(a.isnumeric()) #isalpha/#isalnums
 #CONSOLE
 #type something: hi lorena
 #False
