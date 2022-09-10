@@ -9,7 +9,3 @@ print('You born at' , month , day , 'of' , year)
 first = int(input('type a number'))
 second = int(input('type other number'))
 print('the sum of' , first , 'and' , second , 'is' , first+second)
-
-
-
-
