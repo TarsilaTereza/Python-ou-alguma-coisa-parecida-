@@ -1,4 +1,4 @@
-# Crie um programa que leia o nome completo de uma pessoa e mostre:
+	# Crie um programa que leia o nome completo de uma pessoa e mostre:
 n = input('Qual seu nome? ')
 # – O nome com todas as letras maiúsculas e minúsculas.
 print('Seu nome maiúsculo é {} e minúsculo é {}'.format(n.upper(), n.lower()))
