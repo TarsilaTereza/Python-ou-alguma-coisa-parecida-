@@ -1,9 +1,9 @@
-# nome = str(input('Qual seu nome? '))
-# if nome == 'tarsila':
-# 	print('Que nome lindo')
-# else:
-# 	print('Seu nome é tão mixuruca')
-# print('Boa tarde, {}'.format(nome))
+nome = str(input('Qual seu nome? '))
+if nome == 'tarsila':
+	print('Que nome lindo')
+else:
+ 	print('Seu nome é tão mixuruca')
+ print('Boa tarde, {}'.format(nome))
 
 # passou ou não passou de ano?
 n1 = float(input('Digite sua primeira nota: '))
