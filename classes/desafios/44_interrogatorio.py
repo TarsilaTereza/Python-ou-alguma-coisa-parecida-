@@ -12,7 +12,8 @@ for c in range(1, 5):
 		youngWomen.append(name) #lenth
 	elif sex == 'M':
 		oldMan.append(name)
-		oldest = max(oldMan)
-print('A média da idade do grupo é {}, o homem mais velho é {} e {} mulheres tem menos de 20 anos'.format(sume_age / 2, oldest, len(youngWomen)))	
-print(len(youngWomen))
-print(youngWomen)
+		oldest = min(oldMan)
+if len(youngWomen) > 1:
+	print('A média da idade do grupo é de {} anos, o homem mais velho é {} e {} mulheres têm menos de 20 anos'.format(sume_age / 4, oldest, len(youngWomen)))
+else:	
+	print('A média da idade do grupo é de {} anos, o homem mais velho é {} e {} mulher tem menos de 20 anos'.format(sume_age / 4, oldest, len(youngWomen)))
