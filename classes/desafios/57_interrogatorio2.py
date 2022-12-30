@@ -5,20 +5,20 @@
 # B) quantos homens foram cadastrados.
 
 # C) quantas mulheres tem menos de 20 anos.
-c = youngWomen = 0
+
+adult = men = youngWomen = 0
 while True:
-	adult = 0
-	men = 0
-	name = str(input('Qual seu nome? '))
-	age = int(input('Qual sua idade? '))
-	sex = str(input('Qual seu gênero? [M/F] ')).upper()
-	question = str(input('Deseja cadastrar mais pessoas? [S/N] ')).upper()
-	if 'N' in question:
-		break
-	elif 'M' in sex:
-		men += 1
+	name = str(input('Nome: '))
+	sex = str(input('Gênero[M/f] : ')).upper()
+	age = int(input('Idade: '))
+	question = str(input('Quer cadastrar outra pessoa? [S/N] ')).upper()
+	if question == 'N': #funcionando
+		break #funcionando
 	elif age > 18:
 		adult += 1
-	elif 'F' in sex and age < 20:
-		youngWomen += 1 #funcionando
-print(f'{adult} pessoas tem mais de 18 anos, {men} homens foram cadastrados e {youngWomen} mulheres tem menos de 20 anos.')
+	elif 'M' in sex:
+		men += 1
+	elif sex == 'F' and age < 20:
+		youngWomen += 1
+print(f'{adult} têm mais de 18 anos, {men} homens foram cadastrados, {youngWomen} mulheres têm menos de 20 anos.')
+	
