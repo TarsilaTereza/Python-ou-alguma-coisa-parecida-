@@ -9,16 +9,15 @@
 adult = men = youngWomen = 0
 while True:
 	name = str(input('Nome: '))
-	sex = str(input('Gênero[M/f] : ')).upper()
+	sex = str(input('Gênero[M/F] : ')).upper().strip()
 	age = int(input('Idade: '))
-	question = str(input('Quer cadastrar outra pessoa? [S/N] ')).upper()
+	question = str(input('Quer cadastrar outra pessoa? [S/N] ')).upper().strip()
+	if age > 18:
+		adult += 1
+	if sex == 'M':
+		men += 1
+	if sex == 'F' and age < 20:
+		youngWomen += 1
 	if question == 'N': #funcionando
 		break #funcionando
-	elif age > 18:
-		adult += 1
-	elif 'M' in sex:
-		men += 1
-	elif sex == 'F' and age < 20:
-		youngWomen += 1
 print(f'{adult} têm mais de 18 anos, {men} homens foram cadastrados, {youngWomen} mulheres têm menos de 20 anos.')
-	
